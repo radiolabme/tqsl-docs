@@ -1,0 +1,680 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+<link rel="Shortcut icon" href="../favicon.ico">
+<!-- #BeginEditable "doctitle" -->
+<title>Trusted QSL</title>
+<!-- #EndEditable -->
+<!-- Javascript Includes -->
+<script language="JavaScript">
+	<!--
+		if(window.event + "" == "undefined") event = null;
+		function HM_f_PopUp(){return false};
+		function HM_f_PopDown(){return false};
+		popUp = HM_f_PopUp;
+		popDown = HM_f_PopDown;
+	//-->
+	</script>
+	<script language="JavaScript" src="../jscripts/overlib_mini.js"></script>
+  <!--
+	<script language="JavaScript1.2" src="../jscripts/sponsors2.js"></script>
+  -->
+	<link href="../styles/netscape-tQSL.css" rel="STYLESHEET" type="text/css">
+	<style>
+		@import URL (../styles/tQSL.css);
+	</style> 
+</head>
+
+<body class="body" marginheight=0 marginwidth=0>
+<!-- overDiv object element -->
+<div id="overDiv" style="position: absolute; visibility: hidden; z-index: 1000; "></div>
+<!-- end overDiv object element -->
+
+<!-- Sponsors object elements -->
+<!-- 
+<div id="sponsors_img" style="position: absolute; visibility: hidden; z-index: 1500; width: 200;"><a href="javascript:void(0);" onClick="toggle_sponsors(); return true" onMouseOver="self.status='Toggle Sponsors'; return true" OnMouseOut="self.status=''; return true" ><img src="../images/sponsor.gif" width=200 height=67 border=0></a></div>
+-->
+<!-- End Sponsors object elements-->
+
+<!-- Begin Header Section -->
+<table class="header" cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+    <td align="center"><a href="../index.html"><img src="../images/TrustedQSL.jpg" border=0 width=215 height=43></a></td>
+	</tr>
+</table>
+<!-- End Header Section -->
+
+<!-- Begin Subheader Section-->
+<div class="subheader">Dedicated to keeping the technology for digitally signed eQSLs freely available to the amateur radio community</div>
+<!-- End Subheader Section-->
+
+<!-- Begin Heirarchial Menu Section -->
+<table width=100% class="hm_table" border=0 cellspacing="0" cellpadding="3"><tr>
+    <td width="50"><a href="../index.html" class="hm_link">Home</a></td>
+    <td width="50"><a href="news.html" class="hm_link">News</a></td>
+    <td width="50"><a href="help.html" class="hm_link">Help Us</a></td>
+    <td width="50"><a href="http://groups.yahoo.com/group/TrustedQSL/" class="hm_link">Forum</a></td>
+    <td width="500" align="center"><a class="hm_link"><font color="lightyellow">&nbsp;</font></a></td></tr></table>
+<!-- End Heirarchial Menu Section -->
+
+
+<!-- #BeginTemplate "/Templates/tQSL-mainbody-01.dwt" -->
+<table width="100%" cellspacing=2 cellpadding=0>
+  <tr> 
+	  <td width="25%" class="iNavigate" valign="top">
+		<span class="TOC_title">Table of Contents</span>
+	  <iNavigate>
+   
+   <script language="JavaScript1.2" src="../iNavigate/jscript/iNavigate.js"></script>
+   <script language="JavaScript1.2">
+   iNavigate.GroupName='tQSL';
+   iNavigate.HomePage='index.html';
+   iNavigate.InitiallyOpen=true;
+   iNavigate.NodeBlankName=/Blank/i;
+   iNavigate.NodeMinusName='Minus';
+   iNavigate.NodePlusName='Plus';
+   iNavigate.OpenOnClick=true;
+   </script>
+   <span id="iNavigateAll">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem1" nowrap><span id="iNavigateMenuNode"><a id="iNavigateItem" onFocus="blur()" href="../index.html" target="_self" onMouseOver="window.status='Trusted QSL home page';return overlib('Trusted QSL home page',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Trusted QSL Home</a></span></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem1" nowrap><span id="iNavigateMenuNode"><a id="iNavigateItem" onFocus="blur()" href="licence.html" target="_self" onMouseOver="window.status='Trusted QSL Open Source Licence';return overlib('Trusted QSL Open Source Licence',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Open Source Licence</a></span></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem1" nowrap><span id="iNavigateMenuNode"><a id="iNavigateItem" onFocus="blur()" href="faq.html" target="_self" onMouseOver="window.status='Frequently Asked Questions about Trusted QSL';return overlib('Frequently Asked Questions about Trusted QSL',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Frequently Asked Questions</a></span></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem1" nowrap><span id="iNavigateMenuNode"><a id="iNavigateItem" onFocus="blur()" href="https://sourceforge.net/projects/trustedqsl/" target="_blank" onMouseOver="window.status='Get the latest release of the Trusted QSL documentation and software from Source Forge';return overlib('Get the latest release of the Trusted QSL documentation and software from Source Forge',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Documentation and Source Code</a></span></td>
+   </tr></table>
+   <span id="iNavigateMenu">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateCaption1" nowrap><span id="iNavigateMenuNode"><span>Specifications</span></span></td>
+   </tr></table>
+   <span id="iNavigateMenuBody">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://sourceforge.net/projects/trustedqsl/files/" target="_blank" onMouseOver="window.status='Global Amateur Interchange specifications';return overlib('Global Amateur Interchange specifications',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">GAbbI</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.adif.org.uk/" target="_blank" onMouseOver="window.status='Amateur Data Interchange Format (1.0)';return overlib('Amateur Data Interchange Format (1.0)',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">ADIF</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/leafEnd.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://trustedqsl.sourceforge.net/lotwspec.pdf" target="_blank" onMouseOver="window.status='ARRL Log of the World specifications';return overlib('ARRL Log of the World specifications',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">ARRL LoTW</a></td>
+   </tr></table>
+   </span>
+   </span>
+   <span id="iNavigateMenu">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateCaption1" nowrap><span id="iNavigateMenuNode"><span>ARRL LoTW</span></span></td>
+   </tr></table>
+   <span id="iNavigateMenuBody">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.arrl.org/lotw/" target="_blank" onMouseOver="window.status=' Logbook of the World homepage';return overlib(' Logbook of the World homepage',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Homepage</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/leafEnd.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.arrl.org/news/stories/2003/05/15/102/?nc=1" target="_blank" onMouseOver="window.status='Logbook of the World Enters Open Beta -Testing Phase';return overlib('Logbook of the World Enters Open Beta -Testing Phase',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Beta Test </a></td>
+   </tr></table>
+   </span>
+   </span>
+   <span id="iNavigateMenu">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateCaption1" nowrap><span id="iNavigateMenuNode"><span>Recent Happenings</span></span></td>
+   </tr></table>
+   <span id="iNavigateMenuBody">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://sourceforge.net/projects/showfiles.php?group_id=21495&amp;release_id=162543" target="_blank" onMouseOver="window.status='TrustedQSL V1.02beta Software Developers Kit for Windows Released
+   ';return overlib('TrustedQSL V1.02beta Software Developers Kit for Windows Released
+   ',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Development Kit</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/leafEnd.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/trustedqsl/" target="_blank" onMouseOver="window.status='CVS repository at SourceForge updated with source tree for TrustedQSL V1.02beta
+   ';return overlib('CVS repository at SourceForge updated with source tree for TrustedQSL V1.02beta
+   ',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">CVS repository </a></td>
+   </tr></table>
+   </span>
+   </span>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem1" nowrap><span id="iNavigateMenuNode"><a id="iNavigateItem" onFocus="blur()" href="http://groups.yahoo.com/group/TrustedQSL/" target="_blank" onMouseOver="window.status='Email reflector for sharing ideas, information and suggestions about Trusted QSL';return overlib('Email reflector for sharing ideas, information and suggestions about Trusted QSL',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Email Reflector</a></span></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem1" nowrap><span id="iNavigateMenuNode"><a id="iNavigateItem" onFocus="blur()" href="http://www.openssl.org/" target="_blank" onMouseOver="window.status='The Open Source Project - ';return overlib('The Open Source Project - ',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">OpenSSL</a></span></td>
+   </tr></table>
+   <span id="iNavigateMenu">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateCaption1" nowrap><span id="iNavigateMenuNode"><span onMouseOver="window.status='Articles and information about Electronic QSLing';return overlib('Articles and information about Electronic QSLing',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">E-QSL</span></span></td>
+   </tr></table>
+   <span id="iNavigateMenuBody">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://zs6ez.za.org/articles/e-qsl.htm" target="_blank" onMouseOver="window.status='A Perspective on Electronic QSLing by ZS6EZ';return overlib('A Perspective on Electronic QSLing by ZS6EZ',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">ZS6EZ article</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.sff.net/people/N7DR/radio/QSLformat.pdf" target="_blank" onMouseOver="window.status='A Format for Electronic QSLs by N7DR';return overlib('A Format for Electronic QSLs by N7DR',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">N7DR article 1</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/leafEnd.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.sff.net/people/N7DR/radio/QSLpolicy.pdf" target="_blank" onMouseOver="window.status='Policy for Electronic QSLs by N7DR';return overlib('Policy for Electronic QSLs by N7DR',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">N7DR article 2</a></td>
+   </tr></table>
+   </span>
+   </span>
+   <span id="iNavigateMenu">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img id="iNavigateMenuBox" src="../iNavigate/graphics/rootBlank.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateCaption1" nowrap><span id="iNavigateMenuNode"><span onMouseOver="window.status='General and specific information about cryptography ';return overlib('General and specific information about cryptography ',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Cryptography Information Sources</span></span></td>
+   </tr></table>
+   <span id="iNavigateMenuBody">
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://world.std.com/~franl/crypto/" target="_blank" onMouseOver="window.status='Cryptography Web Sites, Publications, FAQs, and References';return overlib('Cryptography Web Sites, Publications, FAQs, and References',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">General Resources</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.ietf.org/rfc/rfc3280.txt" target="_blank" onMouseOver="window.status='Internet X.509 Public Key Infrastructure  Certificate and Certificate Revocation List (CRL) Profile';return overlib('Internet X.509 Public Key Infrastructure  Certificate and Certificate Revocation List (CRL) Profile',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">X.509 PKI</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://csrc.nist.gov/cryptval/dss.htm" target="_blank" onMouseOver="window.status='Digital Signature Standard';return overlib('Digital Signature Standard',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">DSS</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.rsasecurity.com/rsalabs/faq/3-4-1.html" target="_blank" onMouseOver="window.status='What is a Digital Signature Algorithm (DSA) ?';return overlib('What is a Digital Signature Algorithm (DSA) ?',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">DSA</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.rsasecurity.com/rsalabs/rsa_algorithm/index.html" target="_blank" onMouseOver="window.status='RSA-based Cryptographic Schemes';return overlib('RSA-based Cryptographic Schemes',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">RSA</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><table border="0" cellpadding="0" cellspacing="0" height="100%" background="../iNavigate/graphics/branch.gif"><tr valign="top"><td><img src="../iNavigate/graphics/leaf.gif" width="16" height="16" border="0"></td></tr></table></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.epic.org/crypto/dss/" target="_blank" onMouseOver="window.status='Links to a variety of sources on Digital Signatures';return overlib('Links to a variety of sources on Digital Signatures',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">Digital Signatures</a></td>
+   </tr></table>
+   <table border="0" cellpadding="0" cellspacing="0"><tr valign="top">
+   <td><img id="iNavigatePointer" src="../iNavigate/graphics/blank.gif" width="9" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/blank.gif" width="16" height="16" border="0"></td>
+   <td><img src="../iNavigate/graphics/leafEnd.gif" width="16" height="16" border="0"></td>
+   <td class="iNavigateItem2" nowrap><a id="iNavigateItem" onFocus="blur()" href="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/" target="_blank" onMouseOver="window.status='XML and Digital Signatures';return overlib('XML and Digital Signatures',FGCOLOR,'#FFA95C',OFFSETX,50);" onMouseOut="window.status='';return nd();">XML and DS</a></td>
+   </tr></table>
+   </span>
+   </span>
+   </span>
+   <script language="JavaScript1.2">iNavigate.BeforeLoad();</script>
+   </iNavigate>
+	</td>
+    <!-- Start Main Body Section -->
+    		
+		
+    <td width="75%" class="mainbody" valign="top"> <!-- #BeginEditable "Mainbody" --> 
+      <h2>Trusted QSL FAQ</h2>
+      <OL class="mainbody_text">
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is the difference between E-QSLs 
+          and tQSLs?<br>
+          <STRONG>A.</STRONG>&nbsp;A tQSL is just a special form of an E-QSL, 
+          one signed by its creator with a public key digital signature.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is wrong with<a href="http://www.eqsl.cc"> 
+          http://www.eqsl.cc</a>?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Nothing at all. The concept of a tQSL 
+          does not exclude the participation by a logbook server such as eQSL.cc. 
+          A tQSL adds a third party authentication protocol that replaces the 
+          central server as the trusted authenticator.</LI>
+        <p></p>
+        <LI><STRONG>Q. </STRONG>&nbsp;Is a digital signature really that difficult 
+          to forge, crack or break?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Yes, it's that difficult. The only attack 
+          against a digital signature that is known to be successful requires 
+          factoring a very large number. Factoring a large number is a time consuming 
+          problem but, given enough computing power, it's not impossible. Factoring 
+          100-digit numbers is easy with today's hardware and algorithms. The 
+          <a href="http://www.rsasecurity.com/rsalabs/challenges/factoring/rsa155.html">RSA-155 
+          challenge</a> to factor a 155-digit (512 bit) number required 37.5 CPU-years 
+          distributed across 292 computers and ultimately a supercomputer to solve. 
+          Factoring numbers of more than 200 digits is not currently feasible. 
+          The ANSI and NIST standards for digital signatures require a minimum 
+          of a 303-digit (1024-bit) number.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Will a tQSL signed today continue to 
+          be trustworthy as bigger and faster computers become available?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Extrapolations have been made based on 
+          Moore's Law (computing power doubles every 18 months) and on the historical 
+          progression of the largest number factored. Both approaches give similar 
+          answers when applied to a digital signature created with today's standard 
+          commercial key length of 303-digits (1024-bits): forging such a signature 
+          will not be feasible for at least several decades to come. No one's 
+          crystal ball is perfect. A mathematical breakthrough that results in 
+          the discovery of a more efficient method for factoring large numbers 
+          clearly would alter those predictions. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is a private key?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;A private key is just a very large number. 
+          In itself, it has no special meaning. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What do I sign with my private key? 
+          <br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;You sign tQSLs. You can send those tQSLs 
+          directly to your peers, submit them to an awards sponsor and deposit 
+          then in a central logbook server.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is an identity certificate (cert)?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;A cert contains the user's public key, 
+          call sign and other information, plus the signature of a Certification 
+          Authority (CA) endorsing the information contained in the cert. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What can I sign with my cert?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Nothing. Certs are only used for authenticating 
+          signatures. You use your private key to sign tQSLs. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is a Certification Authority (CA)?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;A CA takes the user's information and 
+          public key, verifies the information and endorses the information and 
+          public key by signing them with the CA's private key creating a cert. 
+        </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Who are the CAs?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Currently there aren't any CAs for tQSLs. 
+          TrustedQSL will issue a &quot;TEST&quot; Certificate, but TrustedQSL 
+          isn't going to be in the certificate business as a CA. The ARRL will 
+          soon be issuing identity certificates for its &quot;Logbook of the World&quot; 
+          program.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Who grants CA status?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;There's no official CA status. Any person 
+          or group can act as a CA. It is up to the award sponsors who make a 
+          policy decision to accept a CA as being trustworthy for their award 
+          program. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is to stop an untrusted party 
+          from becoming a CA?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Nothing, anyone can become a CA. An award 
+          sponsor must decide to accept a CA before that CA has any trust for 
+          their award program. . </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is the Public Key Infrastructure 
+          (PKI)?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;A system of digital certificates, Certificate 
+          Authorities, and other registration authorities that verify and authenticate 
+          each party involved in an exchange of information. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What is the &quot;trust model&quot;?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;The trust model forms one basis for classifying 
+          different PKI architectures. A trust model defines the trusted relationships 
+          and describes the &quot;chain of trust&quot; from a public key that 
+          is known to be authentic through to a specific user's public key.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What happens if my cert gets stolen?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;. It doesn't matter. It is public information 
+          used to authenticate your signature. You can't do anything bad with 
+          it. If there is any question about a certificate being authentic, it 
+          can be authenticated with the CA's public key.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;What happens if my secret key gets stolen?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;This is a problem. You will need to contact 
+          your CA to have them revoke it. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Why is signing is so slow?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Computing a digital signature involves 
+          the exponentiation of very large numbers. That is a very CPU intensive 
+          calculation that takes some time even with a fast processor. A private 
+          key operation such as signing requires performing several million operations 
+          per signature for a standard 1024-bit key. A somewhat less than bleeding 
+          edge machine such as an 800 MHz Pentium III is capable of generating 
+          25-100 signatures per second.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;. If digital signatures and certs are so 
+          complex why force them on users?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Digital signatures are an enabling technology. 
+          The authentication protocol provided by digital signatures keeps the 
+          E-QSL process &quot;open&quot; to participation by third parties. The 
+          most complex issue that a user has to deal with is the initial verification 
+          of identity. Were a central server model to be used, the initial process 
+          of identity verification would remain the same.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;If just a password is good enough to 
+          secure Internet banking, trading stocks, online shopping, paying taxes, 
+          etc., then why isn't a password sufficient for tQSLs?<br>
+          <STRONG>A.</STRONG>&nbsp;Well, there's a whole lot more at work behind 
+          the scenes in securing the typical e-commerce transaction than &quot;just 
+          a password.&quot; In fact, an integral part of the behind the scenes 
+          action involves the same identity certificates and digital signatures 
+          used in TrustedQSL. There's absolutely no reason why tQSL implementations 
+          cannot be as equally transparent, appearing to the user to be no more 
+          complicated than &quot;just a password.&quot;</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;Why do I need anything more than a user-id 
+          and password to log into a server and exchange tQSLs?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;While you can login into a server and 
+          exchange tQSLs, you don't have to. A user-id and secret password are 
+          a way of authenticating a connection such as a login session. However, 
+          an authenticated, trustworthy connection is not necessary for sending 
+          and receiving tQSLs. It's the tQSLs themselves that are trustworthy, 
+          not the connection. That's why an inherently &quot;untrustworthy&quot; 
+          transport mechanism such as e-mail can be used to exchange tQSLs or 
+          to &quot;upload&quot; tQSLs to an award sponsor. If the server you frequent 
+          requires the use of a user-id and password, it's not because of tQSLs.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;I heard that the verification of my 
+          identity by a CA is going to involve paper. Heaven forbid! Why such 
+          a slow and onerous process?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;The trustworthiness of a tQSL ultimately 
+          traces back to the identity verification performed by the CA. The effort 
+          expended in making sure that identification is made correctly is time 
+          well spent. To complete the initial verification process a tQSL CA must 
+          exchange some information with the user via a &quot;trustworthy&quot; 
+          channel. A commonly used trusted channel is the postal mail.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Can't the initial enrollment with a 
+          CA be performed entirely online?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp; It can't, not entirely. The enrollment 
+          process can be initiated online. However, a totally online enrollment 
+          process would be readily spoofed and not trustworthy.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;I've enrolled in the Internet service 
+          of the XYZ Company entirely online, no postcard required. Why can't 
+          a TrustedQSL CA employ an all-electronic enrollment like a real business 
+          does?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;In the enrollment process for that service 
+          you likely provided some &quot;personal secret&quot; that verifies your 
+          identity. Such &quot;secrets&quot; might be a credit card number, an 
+          account number, SSN, PIN, etc. None of those are suitable for use by 
+          a TrustedQSL CA. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;Why must TrustedQSL be more secure then say, 
+          online shopping?<br>
+          <STRONG>A.</STRONG>&nbsp;QSL'ing doesn't need to be more secure than 
+          online shopping. Moreover, TrustedQSL isn't. As just one example, e-commerce 
+          transactions such as online purchases are routinely conducted over an 
+          encrypted link in order to prevent eavesdropping. tQSLs contain no sensitive 
+          or secret information. So there's no need to be employing security measures 
+          such as encryption in tQSLs.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;Why do I need an identity certificate for 
+          QSLs when I don't need one to transact business online, to shop at Amazon.com 
+          for example?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Correct, you don't need an identity certificate 
+          in order to shop at Amazon. However, it is true that every time you 
+          shop at Amazon your computer receives an identity certificate and authenticates 
+          a digital signature. Whenever you log onto a secure e-commerce site 
+          such as Amazon, the secure server sends a copy of its identify certificate 
+          and a digital signature to your computer. Together, the cert and signature 
+          prove that you're really connected to a computer that, in this example, 
+          is a bona fide reresentative of Jeff Bezos' company. In part this proof 
+          is meant to reassure you that an impostor out to steal your credit card 
+          number or drain your bank account has not spoofed the connection. TrustedQSL 
+          employs the same public key digital signature technology that you've 
+          used when making online purchases, most likely without ever being aware 
+          that you were using it. The crucial difference is that in e-commerce 
+          the digital signature is used to authenticate a live connection. In 
+          TrustedQSL'ing the digital signature is used to create an archival electronic 
+          document, a tQSL, which can be authenticated at any future date.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Why do I need an identity certificate 
+          to prove my identity? <br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;You don't need a certificate to prove 
+          your identity. That's not how the identity certificate is used in the 
+          TrustedQSL process. The identity certificate is created so others can 
+          use it to verify that a tQSL that says it is from your station is authentic.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Why does the CA send me a copy of the 
+          identity certificate if I don't need to use it? <br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;For convenience and on general principles, 
+          it is after all your public key and your information. Standard practice 
+          has the sender include a copy of all the certificates in his &quot;chain 
+          of trust&quot; along with his tQSLs. This is a courtesy to the recipient 
+          and expedites authentication. An alternative approach would be for the 
+          CA to keep your certificate, publish it in the CA's online directory 
+          and have the recipient of your tQSLs look up your certificate online. 
+        </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What else can I do with a copy of my 
+          identity certificate? <br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;You can save your identity certificate 
+          along with your private key in a standard portable format (PKCS#12). 
+          The PKCS#12 file can be read by a variety of standard applications such 
+          as e-mail programs and Internet browsers. This will allow using your 
+          private key to sign e-mail messages that you exchange with other amateurs. 
+          And other amateurs can authenticate e-mail claiming to be from you as 
+          coming from the real WA1XYZ.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Who will accept my identity certificate?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;TrustedQSL's goal is for your identity 
+          certificate to be accepted by other hams and by award sponsors. The 
+          broader, non-amateur radio community who have chains of trust originating 
+          in commercial CAs or national PTTs are unlikely to accept an identity 
+          certificate for WA1XYZ as being trustworthy. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Why should I bother to digitally sign 
+          tQSLs<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;In the Spirit of Ham Radio one signs 
+          tQSLs so that your fellow hams can receive award credit for contacts 
+          they've made with you. Signing your tQSLs permits those who do care 
+          about such things, award sponsors being the prime example, to authenticate 
+          that the WA1XYZ tQSLs received from an unauthenticated intermediary 
+          did indeed originate with you, the real WA1XYZ and not some impostor.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Who's an &quot;unauthenticated intermediary?&quot;<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;It can be any third party. Digital signatures 
+          permit the paradigm to shift away from security and authentication via 
+          records kept on central servers towards individual documents that can 
+          be authenticated. Just as with traditional paper QSLs, third parties 
+          are free to handle, store and forward tQSLs. It is of no concern through 
+          which hands, such as logbook servers, a tQSL may have passed prior to 
+          its being presented to an award sponsor. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Can paper QSL cards have a digital 
+          signature?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Yes. It can be done with a bar code printed 
+          on the card. The information on the paper card can then be authenticated 
+          just like a tQSL.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Do I need to be connected to the Internet 
+          to sign tQSLs?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;No, tQSLs can be signed and sent by any 
+          means. Including but not limited to e-mail, packet radio, floppy disk, 
+          CD, even paper QSL cards. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Do I need to be connected to the Internet 
+          to validate tQSLs?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;No, you just need a trusted means to 
+          obtain the CAs public key. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;What is Open Source? <br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Open Source is a concept in which the 
+          copyright holder wishes that the source code be accessible for anyone 
+          to use. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;Why is Open Source important to TrustedQSL?<br>
+          <STRONG>A.</STRONG>&nbsp;For tQSLs to become a standard, then nothing 
+          should keep software authors from providing support for the standard. 
+          One way to encourage this is to make the source code freely available. 
+        </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Your efforts duplicate commercial products. 
+          Products such as Adobe Acrobat, while not free, offer digital signatures 
+          with non-repudiation today.<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;TrustedQSL is an open source implementation. 
+          The protocols adopted for tQSLs are the open standards supported by 
+          Microsoft, Netscape, Verisign, Adobe et al. in their products. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;A trusted system is also highly secure, 
+          isn't it? <br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;There's a publication called the US Department 
+          of Defense Trusted Computer System Evaluation Criteria, commonly known 
+          as the Orange Book. Although originally written for military systems, 
+          the security classifications are now broadly used within the computer 
+          industry; terms such as C2, B1 and A1 originate in the Orange Book. 
+          Yes, a DoD trusted system is very secure. However, the only way in which 
+          the &quot;trusted systems&quot; described in the Orange Book are related 
+          to TrustedQSL is by the rather inopportune similarity of their names.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;Does TrustedQSL rely upon exotic cryptographic 
+          algorithms?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;No, nothing particularly exotic. TrustedQSL 
+          incorporates industry standard algorithms for creating and authenticating 
+          digital signatures. Support for these standard algorithms can already 
+          be found in most e-mail programs and Internet browsers.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Doesn't TrustedQSL involve such sophisticated 
+          encryption techniques that it could never be exported outside the USA?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Absolutely not. The Bureau of Industry 
+          and Security (BIS) in the U.S. Department of Commerce administers export 
+          controls on commercial <a href="http://www.bis.doc.gov/encryption/default.htm">encryption 
+          products</a>. The<a href="http://w3.access.gpo.gov/bis/ear/ear_data.html"> 
+          Export Administration Regulations</a> (EAR) exempt from notification 
+          and review prior to export all &quot;encryption items&quot; having limited 
+          cryptographic functionality. Limited functionality is all that's required 
+          for TrustedQSL: generation and authentication of digital signatures. 
+          Such items may be exported without a license to any destination except 
+          the seven nations designated by the U.S. State Department as &quot;terrorist 
+          supporting&quot; states. Note that the export of any software to five 
+          of the &quot;T-7&quot; nations to which digital signature software would 
+          be controlled is subject to comprehensive embargoes administered by 
+          the U.S. Treasury Department's <a href="http://www.treas.gov/offices/enforcement/ofac/">Office 
+          of Foreign Assets Control</a>.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;How about other countries, are there places 
+          where the importation or use of digital signature software is controlled? 
+          <br>
+          <STRONG>A.</STRONG>&nbsp;Possibly. With over 200 countries and territories 
+          having independent policy-making authority over the <a href="http://www2.epic.org/reports/crypto2000/">import, 
+          export and use</a> of software containing cryptographic functions, it's 
+          difficult to know the answer with complete certainty. And one needs 
+          to be sure to ask the right question, as authentication cryptography 
+          that is not used for confidentiality purposes is often exempt from controls 
+          imposed on more general-purpose encryption software.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;Do we really need to be using military grade 
+          security for QSLs?<br>
+          <STRONG>A.</STRONG>&nbsp;&nbsp;Look, there's nothing at all like &quot;military 
+          grade&quot; security here. tQSLs are not secure; tQSLs are trustworthy 
+          because they can be authenticated. It's a fundamental difference. And 
+          it's not &quot;military grade&quot; authentication; tQSLs employ the 
+          same commercial grade authentication protocols that virtually every 
+          e-commerce site on the Web uses.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp; Isn't the public key algorithm that's used 
+          for digital signatures patented?<br>
+          <strong>A.</strong>&nbsp;&nbsp;Not any more. A public key algorithm 
+          commonly used for digital signatures is known as RSA (Rivest-Shamir-Adelman). 
+          The RSA algorithm was patented in the USA (Patent No. <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=/netahtml/srchnum.htm&r=1&f=G&l=50&s1=4,405,829.WKU.&OS=PN/4,405,829&RS=PN/4,405,829">4,405,829</a>). 
+          However, the patent expired on 20 September 2000.</LI>
+        <p></p>
+        <LI><STRONG>Q. </STRONG> The system you describe is open to fraud, in 
+          that a group of users could conspire.<br>
+          <strong>A.</strong>&nbsp; Sure, that could happen. As it could with 
+          paper QSL cards. Any system will not be perfect. Just ask Verisign and 
+          Microsoft. </LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp; Will ARRL and other award sponsors accept 
+          tQSLs?<br>
+          <strong>A.</strong>&nbsp;&nbsp;TrustedQSL has been selected as the authentication 
+          protocol for the ARRL's &quot;Logbook of the World&quot; (LOTW) project. 
+          Matching pairs of tQSLs will be acceptable for DXCC credit if both are 
+          submitted to LOTW. The ARRL has stated its goal of eventually expanding 
+          LOTW from just the DXCC program to include their other awards programs 
+          (WAS, VUCC). The RSGB (IOTA) is awaiting an E-QSL system based on public 
+          key cryptography to emerge. One could easily imagine the RSGB and other 
+          awards sponsors such as CQ Magazine (WAZ, WPX, USA-CA) will be watching 
+          the ARRL's experience with LOTW.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;What type of service does TrustedQSL.org 
+          offer?<br>
+          <strong>A.</strong>&nbsp;&nbsp;TrustedQSL.org doesn't really offer any 
+          services. We provide information about TrustedQSL systems, Open Standards 
+          and Open Source tools.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;Why should we trust TrustedQSL.org?<br>
+          <strong>A.</strong>&nbsp;&nbsp;There is no need to trust TrustedQSL.org. 
+          We're not a CA. We're just advocating adoption of an open standard based 
+          on public key signatures and providing open source tools.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;How did TrustedQSL get its name? <br>
+          <strong>A.</strong>&nbsp;&nbsp;What's in a name? In coming up with a 
+          name the originators of TrustedQSL were thinking in terms of trust conveyed 
+          by a digital signature, as in &quot;the trust model.&quot; How a QSL 
+          would be trustworthy if it carried a signature that could be authenticated.</LI>
+        <p></p>
+        <LI><STRONG>Q.</STRONG>&nbsp;&nbsp;You guys are doing some cool stuff. 
+          Can I be apart of it?<br>
+          <strong>A.</strong>&nbsp;&nbsp;Sure, join the TrustedQSL <a href="http://groups.yahoo.com/group/TrustedQSL">reflector</a> 
+          and let us know.</LI>
+      </OL>
+      <!-- #EndEditable --> </td>
+    <!-- End Main Body Section -->
+    			
+  </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="5" cellspacing="0"><tr><td align ="left" class="footer2">Last updated: June 14, 2003</td>
+    <td align ="center" class="footer2" >Contact <a href="mailto:webmaster@rickmurphy.net">webmaster</a></td>
+    <td align ="right" class="footer2">&copy; trustedqsl.org </td>
+  </tr></table>
+
+</body>
+
+</html>
+<div align="center"><a href="../index.html" ><img src="../images/tQSL-small.gif" alt="Trusted QSL Home" title="Trusted QSL Home" width="50" height="24" border="0"></a></div>
+
+<!-- #EndTemplate -->

@@ -1,0 +1,35 @@
+{
+  "name": "starlight-site",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "prettier --check --log-level=warn \"**/*.{md,astro,js,json}\"",
+    "lint:fix": "prettier --write \"**/*.{md,astro,js,json}\"",
+    "type-check": "astro check && tsc --noEmit",
+    "ci": "npm run lint && npm run type-check && npm run build",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.37.3",
+    "astro": "^5.6.1",
+    "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.0",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.9.3"
+  },
+  "lint-staged": {
+    "*.{md,astro,js,json}": [
+      "prettier --write"
+    ]
+  }
+}

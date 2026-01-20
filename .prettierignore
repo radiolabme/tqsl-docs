@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.astro/
+
+# Archive and reference files
+contrib/
+_archive/
+
+# Environment
+.venv/

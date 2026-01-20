@@ -1,0 +1,85 @@
+---
+title: Open Source License
+description: Trusted QSL Open Source License (BSD License)
+---
+
+## Current License
+
+Trusted QSL is currently licensed under the **BSD License**. This license allows free use, modification, and distribution while requiring attribution to the original authors.
+
+## Original License Terms
+
+The original Trusted QSL license (circa 2001-2003):
+
+```
+
+====================================================================
+
+Copyright (c) 2001 American Radio Relay League, Inc. (ARRL) and
+     Darryl Wagoner WA1GON.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistribution of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistribution in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in
+   the documentation and/or other materials provided with the
+   distribution.
+
+3. All advertising materials mentioning features or use of this
+   software must display the following acknowledgment:
+   "This product includes software developed by the ARRL and Darryl
+   Wagoner WA1GON for use in the ARRL Logbook Of The World
+   project (http://www.trustedQSL.org)."  Also acknowledgment of
+   the OpenSSL Project.
+
+4. The names "Logbook of The World" and "ARRL" must not be used as
+   an endorsement of products derived from this software without
+   prior written permission. For written permission, please contact
+   jbloom@arrl.org.
+
+5. Products derived from this software may not be called "LoTW"
+   nor may "LoTW" appear in their names without prior written
+   permission of the ARRL.
+
+6. Redistribution of any form whatsoever must retain the following
+   acknowledgment:
+   "This product includes software developed by the ARRL and
+   Darryl Wagoner WA1GON for use in the Logbook of The World project"
+
+THIS SOFTWARE IS PROVIDED BY THE ARRL "AS IS" AND ANY
+EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE ARRL OR
+ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE.
+
+====================================================================
+
+This software consists of voluntary contributions made by many
+individuals on behalf of the ARRL.  For more information on
+the "Logbook of The World" project and the ARRL project,
+please see http://www.trustedQSL.org.
+
+```
+
+## Key Points
+
+- **Open Source**: Free to use, modify, and distribute
+- **Attribution Required**: Must credit ARRL and original authors
+- **No Warranty**: Provided "as is" without guarantees
+- **Maintain Freedom**: Derivative works must preserve open source nature
+
+## About BSD Licensing
+
+The BSD (Berkeley Software Distribution) license is a permissive free software license that imposes minimal restrictions on the redistribution of covered software. This license is OSI-approved and GPL-compatible, making it suitable for both open source and commercial use.
